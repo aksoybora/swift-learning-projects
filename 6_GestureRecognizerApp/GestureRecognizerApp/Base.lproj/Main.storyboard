@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GestureRecognizerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Lightning Mcqueen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rN6-Z3-TYY">
+                                <rect key="frame" x="19" y="405" width="354" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="mcqueen" translatesAutoresizingMaskIntoConstraints="NO" id="Yqd-dV-kc2">
+                                <rect key="frame" x="23" y="165" width="346" height="193"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="193" id="uHo-T2-OtC"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Yqd-dV-kc2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Qq-WI-IYt"/>
+                            <constraint firstItem="Yqd-dV-kc2" firstAttribute="centerX" secondItem="rN6-Z3-TYY" secondAttribute="centerX" id="B8m-9D-qOb"/>
+                            <constraint firstItem="rN6-Z3-TYY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MDp-ss-vlQ"/>
+                            <constraint firstItem="Yqd-dV-kc2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="PeM-TC-LAi"/>
+                            <constraint firstItem="rN6-Z3-TYY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="19" id="Pf2-1D-Lny"/>
+                            <constraint firstItem="Yqd-dV-kc2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="106" id="oIb-tM-4LY"/>
+                            <constraint firstItem="rN6-Z3-TYY" firstAttribute="top" secondItem="Yqd-dV-kc2" secondAttribute="bottom" constant="47" id="vbj-Ni-58i"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Yqd-dV-kc2" id="ZUM-ej-bIu"/>
+                        <outlet property="nameLabel" destination="rN6-Z3-TYY" id="gMl-Kf-vdd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mcqueen" width="250" height="137"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

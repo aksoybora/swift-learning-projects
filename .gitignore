@@ -1,0 +1,91 @@
+## Xcode
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+*.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+DerivedData/
+build/
+*.build/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/xcshareddata/WorkspaceSettings.xcsettings
+*.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+*.playgroundbook
+*.playground/Sources/*.swift
+*.playgroundtimeline
+
+## SwiftPM
+.swiftpm/
+Packages/
+Package.pins
+Package.resolved
+.build/
+
+## CocoaPods
+Pods/
+Podfile.lock
+*.xcworkspace
+
+## Carthage
+Carthage/Build/
+Carthage/Checkouts/
+
+## Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+## Firebase/Secrets
+GoogleService-Info.plist
+GoogleService-Info*.plist
+GoogleService-Info-*.plist
+*.keys
+*.secrets
+*.env
+.env*
+
+## API keys / Configs
+*.xcconfig
+Config.xcconfig
+Secrets.xcconfig
+APIKeys.plist
+*.cer
+*.p12
+*.mobileprovision
+
+## Asset/Output noise
+*.DS_Store
+*.swp
+*.lock
+*.log
+*.orig
+*.rej
+
+## SwiftPM/Xcode caches
+.swiftpm/xcode/packagedescription
+.swiftpm/xcode/package.xcworkspace/xcuserdata/
+.swiftpm/xcode/package.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+
+## iOS specific
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+## GitHub
+.git-credentials
+.gitconfig.local
+
+## Misc IDE
+.idea/
+.vscode/
+.fleet/
+
+# Project-specific source files that may contain API keys
+# Hide entire view/controller files to avoid leaking keys
+18_CurencyConverter/CurencyConverter/ViewController.swift
+30_CryptoCrazySwiftUI/CryptoCrazySwiftUI/View/MainView.swift
+
+
